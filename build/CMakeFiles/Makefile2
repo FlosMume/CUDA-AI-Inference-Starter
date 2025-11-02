@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/cuda_ai_infer.dir/all
+all: CMakeFiles/cuda_ai_inference.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/cuda_ai_infer.dir/codegen
+codegen: CMakeFiles/cuda_ai_inference.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/cuda_ai_infer.dir/clean
+clean: CMakeFiles/cuda_ai_inference.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cuda_ai_infer.dir
+# Target rules for target CMakeFiles/cuda_ai_inference.dir
 
 # All Build rule for target.
-CMakeFiles/cuda_ai_infer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles --progress-num=1,2,3 "Built target cuda_ai_infer"
-.PHONY : CMakeFiles/cuda_ai_infer.dir/all
+CMakeFiles/cuda_ai_inference.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles --progress-num=1,2,3,4 "Built target cuda_ai_inference"
+.PHONY : CMakeFiles/cuda_ai_inference.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cuda_ai_infer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cuda_ai_infer.dir/all
+CMakeFiles/cuda_ai_inference.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cuda_ai_inference.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles 0
-.PHONY : CMakeFiles/cuda_ai_infer.dir/rule
+.PHONY : CMakeFiles/cuda_ai_inference.dir/rule
 
 # Convenience name for target.
-cuda_ai_infer: CMakeFiles/cuda_ai_infer.dir/rule
-.PHONY : cuda_ai_infer
+cuda_ai_inference: CMakeFiles/cuda_ai_inference.dir/rule
+.PHONY : cuda_ai_inference
 
 # codegen rule for target.
-CMakeFiles/cuda_ai_infer.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target cuda_ai_infer"
-.PHONY : CMakeFiles/cuda_ai_infer.dir/codegen
+CMakeFiles/cuda_ai_inference.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target cuda_ai_inference"
+.PHONY : CMakeFiles/cuda_ai_inference.dir/codegen
 
 # clean rule for target.
-CMakeFiles/cuda_ai_infer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/clean
-.PHONY : CMakeFiles/cuda_ai_infer.dir/clean
+CMakeFiles/cuda_ai_inference.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/clean
+.PHONY : CMakeFiles/cuda_ai_inference.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
@@ -117,6 +117,7 @@ CMakeFiles/cuda_ai_infer.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

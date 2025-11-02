@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=cuda_ai_inference_starter
+CMAKE_PROJECT_NAME:STATIC=cuda_ai_inference
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -522,6 +522,15 @@ CUDA_pcsamplingutil_LIBRARY:FILEPATH=/usr/local/cuda-12.8/targets/x86_64-linux/l
 
 //Path to a library.
 CUDA_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.a
+
+//Value Computed by CMake
+cuda_ai_inference_BINARY_DIR:STATIC=/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build
+
+//Value Computed by CMake
+cuda_ai_inference_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+cuda_ai_inference_SOURCE_DIR:STATIC=/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter
 
 //Value Computed by CMake
 cuda_ai_inference_starter_BINARY_DIR:STATIC=/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build

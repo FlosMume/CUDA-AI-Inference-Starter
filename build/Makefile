@@ -113,28 +113,29 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cuda_ai_infer
+# Target rules for targets named cuda_ai_inference
 
 # Build rule for target.
-cuda_ai_infer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda_ai_infer
-.PHONY : cuda_ai_infer
+cuda_ai_inference: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda_ai_inference
+.PHONY : cuda_ai_inference
 
 # fast build rule for target.
-cuda_ai_infer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/build
-.PHONY : cuda_ai_infer/fast
+cuda_ai_inference/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/build
+.PHONY : cuda_ai_inference/fast
 
 src/kernels.o: src/kernels.cu.o
 .PHONY : src/kernels.o
 
 # target to build an object file
 src/kernels.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/src/kernels.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/src/kernels.cu.o
 .PHONY : src/kernels.cu.o
 
 src/kernels.i: src/kernels.cu.i
@@ -142,7 +143,7 @@ src/kernels.i: src/kernels.cu.i
 
 # target to preprocess a source file
 src/kernels.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/src/kernels.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/src/kernels.cu.i
 .PHONY : src/kernels.cu.i
 
 src/kernels.s: src/kernels.cu.s
@@ -150,7 +151,7 @@ src/kernels.s: src/kernels.cu.s
 
 # target to generate assembly for a file
 src/kernels.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/src/kernels.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/src/kernels.cu.s
 .PHONY : src/kernels.cu.s
 
 src/main.o: src/main.cu.o
@@ -158,7 +159,7 @@ src/main.o: src/main.cu.o
 
 # target to build an object file
 src/main.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/src/main.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/src/main.cu.o
 .PHONY : src/main.cu.o
 
 src/main.i: src/main.cu.i
@@ -166,7 +167,7 @@ src/main.i: src/main.cu.i
 
 # target to preprocess a source file
 src/main.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/src/main.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/src/main.cu.i
 .PHONY : src/main.cu.i
 
 src/main.s: src/main.cu.s
@@ -174,7 +175,7 @@ src/main.s: src/main.cu.s
 
 # target to generate assembly for a file
 src/main.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_infer.dir/build.make CMakeFiles/cuda_ai_infer.dir/src/main.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_ai_inference.dir/build.make CMakeFiles/cuda_ai_inference.dir/src/main.cu.s
 .PHONY : src/main.cu.s
 
 # Help Target
@@ -185,7 +186,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cuda_ai_infer"
+	@echo "... cuda_ai_inference"
 	@echo "... src/kernels.o"
 	@echo "... src/kernels.i"
 	@echo "... src/kernels.s"
@@ -203,6 +204,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
