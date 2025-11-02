@@ -1,0 +1,3 @@
+/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles/cuda_ai_infer.dir
+/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles/edit_cache.dir
+/home/myunix/dev/cpp/cuda/cuda-ai-inference-starter/build/CMakeFiles/rebuild_cache.dir
