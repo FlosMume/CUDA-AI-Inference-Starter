@@ -1,0 +1,50 @@
+# Build artifacts
+/build/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Profiling and output files
+*.qdrep
+*.nsys-rep
+*.ncu-rep
+*.nvvp
+*.log
+
+# Compiled binaries and object files
+*.o
+*.obj
+*.so
+*.a
+*.exe
+*.dll
+*.pdb
+*.lib
+*.exp
+*.ptx
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.out
+
+# CUDA profiling dumps
+*.nvprof
+*.csv
+
+# VSCode/IDE configs
+.vscode/
+.idea/
+*.code-workspace
+
+# Python virtualenvs (if future Python scripts added)
+.venv/
+env/
+venv/
+
+# OS-specific
+.DS_Store
+Thumbs.db
